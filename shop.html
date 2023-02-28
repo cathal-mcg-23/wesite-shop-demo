@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="Ahgt shoppe" />
+
+    <meta name="description" content="art shop" />
+
+    <meta name="keywords" content="art pottery paintings posters" />
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+
+    <link href="styles/mystyle1.css" rel="stylesheet" type="text/css" />
+    <link href="styles/mystyle1mobile.css" media="(max-width: 992px)" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>ArtBargain</title>
+
+
+    <style type="text/css">
+        body {}
+    </style>
+
+</head>
+
+<body id="shop">
+    <header>
+
+        <a href="index.html">
+            <img id="logoimg" alt="logo pic" src="images/transhead.png" /></a>
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home </a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link active" href="shop.html">Shop </a>
+                </div>
+            </div>
+
+
+            <div class="divFloatRight ">
+                <a id="loginLink" class="nav-item " href="login.html">
+                    <button id="loginButton" type="button" class="btn btn-secondary ml-2">
+                        Login <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a id="cartLink" class="nav-item " href="cart.html">
+                    <button id="cartButton" type="button" class="btn btn-secondary ml-2">
+                        Cart <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a class="nav-item " href="checkout.html">
+                    <button id="checkoutButton" type="button" class="btn btn-secondary ml-2">
+                        Checkout <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="myHidden">
+
+        <div id="shopMain" class="container-fluid">
+            <div class="row">
+                <div id="filters" class="col-lg-3 hidden-lg">
+
+                    <div id="filterHeading">
+                        <h2>Filter</h2>
+                    </div>
+
+
+
+
+
+                    <div id="filterinside">
+                        <form action="/action_page.php">
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="price">
+                                <label class="form-check-label" for="price">
+                                    Price
+                                </label>
+                            </div>
+
+                            greater than<br><input type="text" name="FirstName" value="100" size="5"><br>
+                            less than<br><input type="text" name="LastName" value="500" size="5"><br>
+                            <br>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="arttype">
+                                <label class="form-check-label" for="arttype">
+                                    Artwork type
+                                </label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Painting
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Pottery
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                    Poster
+                                </label>
+                            </div>
+
+                            <br>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="origin">
+                                <label class="form-check-label" for="origin">
+                                    Artist origin
+                                </label>
+                            </div>
+
+
+
+
+
+                            <div class="form-group">
+                                <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                                    <option value="europe">Europe</option>
+                                    <option value="america">America</option>
+                                    <option value="china">China</option>
+                                    <option value="africa">Africa</option>
+                                    <option value="japan">Japan</option>
+                                </select>
+                            </div>
+
+
+                            <input type="submit" value="refine">
+                        </form>
+                        <br>
+                    </div>
+                </div>
+
+
+                <div id="items" class="col-lg-9 ">
+                    <div id="itemsContainer" class="container-fluid">
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <span id="footerText">
+            Copyright &copy; <span id="year"></span>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        
+        </span>
+        
+    </footer>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>

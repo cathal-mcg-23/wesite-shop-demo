@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="art shop" />
+
+    <meta name="keywords" content="art pottery paintings posters" />
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+
+    <link href="styles/mystyle1.css" rel="stylesheet" type="text/css" />
+    <link href="styles/mystyle1mobile.css" media="(max-width:  	960px)" rel="stylesheet" type="text/css" />
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>ArtBargain</title>
+
+
+
+</head>
+
+<body id="checkout">
+    <header>
+
+        <a href="index.html">
+            <img id="logoimg" alt="logo pic" src="images/transhead.png" /></a>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home </a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link active" href="shop.html">Shop </a>
+                </div>
+            </div>
+
+
+            <div class="divFloatRight ">
+                <a id="loginLink" class="nav-item " href="login.html">
+                    <button id="loginButton" type="button" class="btn btn-secondary ml-2">
+                        Login <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a id="cartLink" class="nav-item " href="cart.html">
+                    <button id="cartButton" type="button" class="btn btn-secondary ml-2">
+                        Cart <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a class="nav-item " href="checkout.html">
+                    <button id="checkoutButton" type="button" class="btn btn-secondary ml-2">
+                        Checkout <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="myHidden">
+
+        <div id="divCheckout">
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <article class="hideOnStart" id="loggedOut">
+            <p class=" divWide">
+
+
+
+
+                <br>
+                you are not logged in
+                <br>
+                <br>
+                <a href="login.html">
+                    <button id="signinButton" class="btn btn-lg btn-primary btn-block">Login</button>
+                </a>
+                <br>
+            </p>
+
+        </article>
+
+
+
+        <article class="hideOnStart checkoutLoggedIn " id="loggedIn">
+            <div id="loggedIn">
+
+                <h4>Check out your items</h4>
+
+                <div class="divCheckout col-md-12 order-md-1">
+
+                    <form id="checkoutForm" class="needs-validation">
+
+                        <h4 class="mb-3">Delivery Address</h4>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="Terri" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="Lavelle" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="mb-3">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="House 5, Along Street" value="12 Tivoli Road" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Town</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="Dún Laoghaire" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="country">County or Province</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="Co. Dublin" required>
+                                <div class="invalid-feedback">
+                                    Valid county or province required.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Eircode(optional)</label>
+                                <input type="text" class="form-control" id="eircode" placeholder="" value="T12 R732">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="country">Country</label>
+                                <select class="custom-select d-block w-100" id="country" required>
+                                    <option value="ie">Ireland</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AX">Åland Islands</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="fr">France</option>
+                                    <option value="AS">United Kingdom</option>
+                                    <option value="WF">Wallis and Futuna</option>
+                                    <option value="EH">Western Sahara</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select>
+
+
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Payment by credit or debit card</h4>
+
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" value="Terri Lavelle"  placeholder="" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Card number</label>
+                                <input type="text" class="form-control" id="cc-number" value="1245 2356 4578 5689" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Credit card number is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" value="11/23"  placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Expiration date required
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Security code required
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" checked id="same-address">
+                            <label class="custom-control-label" for="same-address">Billing address is the same as my shipping address</label>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="">Total to pay</span>
+                            <span id="totalToPay">€45.00</span>
+                        </h4>
+
+                        <button class="btn btn-primary btn-lg btn-block"  type="submit">Confirm payment</button>
+                    </form>
+
+                    <div class="noDisplay" id="noItems" >
+                        <br>Your cart contains no items<br><br>
+                        <button class="btn btn-primary btn-lg btn-block visitShop"  >Visit Shop</button><br>
+                    </div>
+                    
+                    <div class="noDisplay" id="deliveryEstimate" >
+                        <br>Your items have been dispatched.
+                        <br>Allow one week for delivery.<br><br>
+                        <button class="btn btn-primary btn-lg btn-block visitShop"    >Visit Shop</button><br>
+                    </div>
+
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <span id="footerText">
+            Copyright &copy; <span id="year"></span>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+
+        </span>
+
+    </footer>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

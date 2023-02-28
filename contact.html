@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="art shop" />
+
+    <meta name="keywords" content="art pottery paintings posters" />
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+
+
+    <link href="styles/mystyle1.css" rel="stylesheet" type="text/css" />
+    <link href="styles/mystyle1mobile.css" media="(max-width:  	960px)" rel="stylesheet" type="text/css" />
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>ArtBargain</title>
+
+
+    <style type="text/css">
+        body {}
+    </style>
+
+</head>
+
+<body id="contact">
+    <header>
+
+        <a href="index.html">
+            <img id="logoimg" alt="logo pic" src="images/transhead.png" />
+        </a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home </a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link active" href="shop.html">Shop </a>
+                </div>
+            </div>
+
+
+            <div class="divFloatRight ">
+                <a id="loginLink" class="nav-item " href="login.html">
+                    <button id="loginButton" type="button" class="btn btn-secondary ml-2">
+                        Login <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a id="cartLink" class="nav-item " href="cart.html">
+                    <button id="cartButton" type="button" class="btn btn-secondary ml-2">
+                        Cart <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a class="nav-item " href="checkout.html">
+                    <button id="checkoutButton" type="button" class="btn btn-secondary ml-2">
+                        Checkout <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+            </div>
+
+        </nav>
+        
+    </header>
+
+    <main class="myHidden">
+        <article id="homeArticle">
+            <h2>Contact</h2>
+            <p>
+
+                Our shop is open between the hours of 10.00 am and 5.00 pm, Tuesday, Wednesday and Thursday.<br>
+                Contact us by phone on <strong>+353 89 234 2322</strong><br>
+                Or send any enquiries you may have to <strong>mail@artbargain.com</strong>
+                
+            </p>
+            
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0315578489226!2d-6.2589954840206!3d53.34269128268594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9a5416d189%3A0x3cdf9a9c86faf218!2sNassau%20St%2C%20Dublin!5e0!3m2!1sen!2sie!4v1575901303836!5m2!1sen!2sie" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            
+        </article>
+
+    </main>
+    <footer>
+        <span id="footerText">
+            Copyright &copy; <span id="year"></span>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        
+        </span>
+        
+    </footer>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>

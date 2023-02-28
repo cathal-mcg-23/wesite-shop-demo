@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="art shop" />
+
+    <meta name="keywords" content="art pottery paintings posters" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+
+    <link href="styles/mystyle1.css" rel="stylesheet" type="text/css" />
+    <link href="styles/mystyle1mobile.css" media="(max-width:  	960px)" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>ArtBargain</title>
+
+
+    <style type="text/css">
+        body {}
+    </style>
+
+</head>
+
+<body id="home">
+    <header>
+
+        <a href="index.html">
+            <img id="logoimg" alt="logo pic" src="images/transhead.png" /></a>
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home </a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link active" href="shop.html">Shop </a>
+                </div>
+            </div>
+
+
+            <div class="divFloatRight ">
+                <a id="loginLink" class="nav-item " href="login.html">
+                    <button id="loginButton" type="button" class="btn btn-secondary ml-2">
+                        Login <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a id="cartLink" class="nav-item " href="cart.html">
+                    <button id="cartButton" type="button" class="btn btn-secondary ml-2">
+                        Cart <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+
+                <a class="nav-item " href="checkout.html">
+                    <button id="checkoutButton" type="button" class="btn btn-secondary ml-2">
+                        Checkout <span class="badge badge-light" id="checkout"></span>
+                    </button>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="myHidden">
+        <article id="homeArticle">
+            <h2>Art for everyone</h2>
+            <p>
+
+                Welcome to ArtBargain, the art shop that brings artist and art fan together, and has fun doing it.
+
+            </p>
+            <h3>Featured artwork</h3>
+
+                This week we would like to draw your attention to this work by the Community Artists Group<br>
+                <img alt="item pic" src="images/products1/pai/06.jpg" />'
+
+            <p>
+                Rocking Lady 1,
+                Handpainted Art Painting - 32in X 32in,
+
+            </p>
+            <p>
+                
+                Available now at the price of €114.95
+
+
+            </p>
+
+            <br>
+        </article>
+
+    </main>
+    <footer>
+        <span id="footerText">
+            Copyright &copy; <span id="year"></span>
+
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        
+        </span>
+        
+    </footer>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>
